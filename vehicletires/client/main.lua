@@ -3,7 +3,7 @@ local topMPH = 30.0
 
 Citizen.CreateThread(function()
  	while true do
- 		Citizen.Wait(1000)
+ 		Citizen.Wait(100)
 		local ped = PlayerPedId()
 		if IsPedInAnyVehicle(ped, false) then
 			local veh = GetVehiclePedIsUsing(ped)
